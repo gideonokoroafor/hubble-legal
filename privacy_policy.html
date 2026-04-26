@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hubble — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Hubble app — what we collect, how we use it, and how long we keep it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080C18;
+      --surface: #0F1626;
+      --primary: #4FB6E8;
+      --text-primary: #E8EDF5;
+      --text-secondary: #A8B0C2;
+      --text-muted: #6E768A;
+      --border: #1C2538;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at top, #0D1E35 0%, #080C18 60%);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.4px;
+      margin-bottom: 40px;
+    }
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 12px rgba(79, 182, 232, 0.55);
+    }
+    h1 {
+      color: var(--text-primary);
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin: 0 0 4px;
+    }
+    .updated {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 28px;
+    }
+    h2 {
+      color: var(--text-primary);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      margin: 36px 0 12px;
+    }
+    p { margin: 0 0 12px; font-size: 15px; }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    li { margin-bottom: 8px; font-size: 15px; }
+    li::marker { color: var(--primary); }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    @media (max-width: 480px) {
+      main { padding: 40px 20px 60px; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <span class="brand-dot"></span>
+      hubble.
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 25, 2026</p>
+
+    <p>
+      Hubble helps small groups find a meeting spot by calculating the
+      midpoint between everyone's locations and showing nearby venues.
+      We've built it to collect as little personal data as possible.
+      This policy explains what we collect, how we use it, and how long
+      we keep it.
+    </p>
+
+    <h2>What we collect</h2>
+    <p>When you use Hubble we may collect:</p>
+    <ul>
+      <li>An anonymous user identifier (a random UUID generated on sign-in). This is not linked to your name, email, phone, or any other identity.</li>
+      <li>A location you submit to a session — either your GPS coordinates (only if you tap "Use my location") or an address you type into the search field.</li>
+      <li>Session metadata: the 6-character session code, search tags you choose (e.g. "Food", "Bowling"), and timestamps.</li>
+    </ul>
+
+    <h2>What we don't collect</h2>
+    <p>Hubble does not collect or store:</p>
+    <ul>
+      <li>Your name, email address, phone number, or photos.</li>
+      <li>Your device contacts, calendar, or microphone audio.</li>
+      <li>Advertising identifiers (IDFA / GAID).</li>
+      <li>Background location. We only read your location when you actively tap "Use my location".</li>
+      <li>Behavioural analytics. We do not track screen views, taps, or session duration for marketing purposes.</li>
+    </ul>
+
+    <h2>How we use your data</h2>
+    <p>Submitted locations are used solely to:</p>
+    <ul>
+      <li>Compute the geographic midpoint of your group.</li>
+      <li>Search for nearby venues that match your group's tags.</li>
+      <li>Show each participant their personal distance to a venue (only on your own device — other participants do not see your address or coordinates).</li>
+    </ul>
+
+    <h2>How long we keep it</h2>
+    <p>Sessions are temporary by design:</p>
+    <ul>
+      <li>Every session expires automatically 24 hours after it is created. At that point, the session and all participant locations are permanently deleted from our database.</li>
+      <li>When the host ends a session, every participant's submitted location is deleted immediately.</li>
+      <li>When you leave a session, your participant row (including your submitted location) is deleted immediately.</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>
+      To provide the app we send certain data to trusted third-party
+      services. None of these requests include any personal identifier
+      — only the data described.
+    </p>
+    <ul>
+      <li><strong>Supabase</strong> — stores session and participant rows (including submitted locations) and handles anonymous authentication. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+      <li><strong>Google Maps Platform (Places API)</strong> — receives the group midpoint and your search tags to return matching venues, plus typed text when you use address autocomplete. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li><strong>OSRM</strong> (router.project-osrm.org) — receives the midpoint and venue coordinates to compute estimated driving times.</li>
+      <li><strong>OpenStreetMap Nominatim</strong> — receives GPS coordinates only when you tap "Use my location", in order to convert them to a human-readable address. <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">osmfoundation.org/wiki/Privacy_Policy</a></li>
+      <li><strong>CARTO</strong> — serves the dark map tiles displayed on the results screen. <a href="https://carto.com/privacy" target="_blank" rel="noopener">carto.com/privacy</a></li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>
+      Hubble is not intended for children under 13. We do not knowingly
+      collect data from children under 13.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+      Because Hubble does not link any personal identity to your
+      anonymous account, the simplest way to remove your data is to
+      leave or end any active session — your submitted locations are
+      deleted immediately. Sessions in which you are no longer a
+      participant will also expire and be deleted within 24 hours.
+    </p>
+    <p>
+      If you'd like us to delete data manually or have any questions,
+      contact us at
+      <a href="mailto:support@hubbleapp.example">support@hubbleapp.example</a>.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We may update this policy as the app evolves. The "Last updated"
+      date at the top reflects the most recent version. Material
+      changes will be communicated in-app on next launch.
+    </p>
+
+    <div class="contact">
+      Contact: <a href="mailto:support@hubbleapp.example">support@hubbleapp.example</a>
+    </div>
+  </main>
+</body>
+</html>
